@@ -1,0 +1,173 @@
+.container {
+    width: 100%;
+    margin-right: auto;
+    margin-left: auto;
+    padding-right: 110px;
+    padding-left: 110px;
+}
+/* header  */
+.py-\[13px\] {
+    padding-top: 13px;
+    padding-bottom: 13px;
+}
+.bg-destructive {
+    background-color: #ed145b;
+}
+.text-cream-foreground {
+    color: #fff;
+}
+/* banner  */
+#banner {
+    background-color: #fff0e5;
+}
+.left-2\.5 {
+    left: 10px;
+}
+img, video {
+    max-width: 100%;
+    height: auto;
+}
+#btn-banner {
+    background-color: #73be48;
+}
+#btn-banner:hover {
+    background-color: #1cbbb4;
+}
+
+/* number talk  */
+.font-bubblegum-sans {
+    font-family: "Bubblegum Sans", sans-serif;
+}
+
+.text-color-counter {
+    color: #f7941e;
+}
+.bg-primary {
+    background-color: #f7941e;
+}
+.bg-green {
+    background-color: #73be48;
+}
+.bg-secondary {
+    background-color: #1cbbb4;
+}
+.bg-warm {
+    background-color: #fff0e5;
+}
+.bg-background {
+    background-color: #fff;
+}
+
+.text-secondary-foreground {
+    color: #1cbbb4;
+}
+
+p {
+    color: #686868;
+}
+
+.text-green-foreground {
+    color: #73be48;
+}
+.text-cream-foreground {
+    color: #fff;
+}
+
+/* education programs  */
+.group\/card:hover .group-hover\/card\:text-cream-foreground {
+    color: #fff;
+}
+
+.group\/card:hover .group-hover\/card\:bg-green {
+    background-color: #73be48;
+}
+.group\/btn:hover .group-hover\/btn\:text-green-foreground {
+    color: #73be48;
+}
+
+.hover\:text-cream-foreground:hover {
+    color: #fff;
+}
+.hover\:bg-primary:hover {
+    background-color: #f7941e;
+}
+.portfolio .active-tab {
+    background-color: #f7941e;
+    color: #fff;
+}
+
+/*  */
+.hover\:border-green:hover {
+    border-color: #73be48;
+}
+
+/*  */
+.after\:bg-testimonial-banner::after {
+    background-image: url(../img/testimonial/bg-img.png);
+}
+.bg-newsletter-banner {
+    background-image: url(../img/newsletter/bg-img.png);
+}
+
+
+@keyframes skewIn {
+    from {
+      opacity: 0;
+      transform: skewY(20deg);
+    }
+    to {
+      opacity: 1;
+      transform: skewY(0);
+    }
+  }
+  
+  .animate-skew {
+    animation: skewIn 0.8s ease-out;
+  }
+
+  @keyframes upDown {
+    0%, 100% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-15px);
+    }
+  }
+  
+  .animate-up-down {
+    animation: upDown 2s ease-in-out infinite;
+  }
+
+  @keyframes leftRightLoop {
+    0% {
+      transform: translateX(0);
+    }
+    50% {
+      transform: translateX(50px); /* hoặc khoảng cách tùy ý */
+    }
+    100% {
+      transform: translateX(0);
+    }
+  }
+  
+  .animate-left-right {
+    animation: leftRightLoop 5s ease-in-out infinite;
+  }
+  
+
+  @keyframes leftRight {
+    0%, 100% {
+      transform: translateX(0);
+    }
+    25% {
+      transform: translateX(-15px);
+    }
+    75% {
+      transform: translateX(15px);
+    }
+  }
+  
+  .animate-left-right-2 {
+    animation: leftRight 1.5s ease-in-out infinite;
+  }
+  
