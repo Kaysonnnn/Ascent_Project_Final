@@ -98,8 +98,7 @@
     <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
-    <!-- Top Header start-->
-    <!-- Header start-->
+    <!-- Header -->
     <header
       id="header"
       class="sticky top-0 transition-[top] duration-300 z-40"
@@ -653,8 +652,6 @@
         <!-- bottom header -->
       </div>
     </header>
-    <!-- Top Header end -->
-    <!-- Header end -->
 
     <!-- banner section start -->
     <section id="banner" class="pt-[78px] lg:mb-15 mb-10 relative">
@@ -3397,5 +3394,52 @@
     <!-- backtotop -->
     <script src="./libs/backtotop/util.js"></script>
     <script src="./libs/backtotop/main.js"></script>
+
+    <script>
+      // Đợi cho tài liệu tải xong
+      document.addEventListener("DOMContentLoaded", function () {
+        // Lấy tất cả các tab
+        const tabs = document.querySelectorAll(".target-tab");
+        // Lấy tất cả các khối nội dung
+        const cards = document.querySelectorAll(".target-card");
+
+        // Thêm sự kiện click cho mỗi tab
+        tabs.forEach((tab) => {
+          tab.addEventListener("click", function () {
+            // Lấy giá trị data-target của tab được nhấp
+            const target = this.getAttribute("data-target");
+
+            // Xóa lớp active-tab khỏi tất cả các tab
+            tabs.forEach((t) => {
+              t.classList.remove("active-tab");
+              t.classList.add("text-[#686868]");
+            });
+
+            // Thêm lớp active-tab vào tab được nhấp
+            this.classList.add("active-tab");
+            this.classList.remove("text-[#686868]");
+
+            // Ẩn tất cả các khối nội dung
+            cards.forEach((card) => {
+              card.classList.add("invisible", "opacity-0", "translate-y-10");
+              card.classList.remove("translate-y-0");
+            });
+
+            // Hiển thị khối nội dung tương ứng
+            const activeCard = document.querySelector(
+              `.target-card[data-target="${target}"]`
+            );
+            if (activeCard) {
+              activeCard.classList.remove(
+                "invisible",
+                "opacity-0",
+                "translate-y-10"
+              );
+              activeCard.classList.add("translate-y-0");
+            }
+          });
+        });
+      });
+    </script>
   </body>
 </html>
