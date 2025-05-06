@@ -170,4 +170,52 @@ p {
   .animate-left-right-2 {
     animation: leftRight 1.5s ease-in-out infinite;
   }
-  
+
+/* Backtotop */
+.backtotop {
+  width: 50px;
+  height: 50px;
+  line-height: 50px;
+  text-align: center;
+  display: block;
+  position: fixed;
+  right: 15px;
+  bottom: 15px;
+  color: white;
+  box-shadow: var(--primary) -4px 4px 24px -10px;
+  visibility: hidden;
+  opacity: 0;
+  background-color: var(--primary); /* Sử dụng màu vàng từ biến --primary */
+  border-radius: 50%; /* Bo viền tròn */
+  transition: 0.2s;
+}
+
+.cd-top--is-visible { 
+  visibility: visible;
+  opacity: 1;
+}
+
+.cd-top--fade-out { 
+  opacity: 0.5;
+}
+:root {
+  --primary: #f7941e; 
+}
+
+/* Testimonial */
+.testimonial .rating i {
+  color: #f7941e; 
+  font-size: 20px; 
+  margin-right: 5px;
+ }
+ /* Dịch chuyển nhẹ các khung testimonial sang phải */
+.testimonial .swiper-wrapper {
+  transform: translateX(50px); /* Dịch chuyển nhẹ sang phải */
+}
+
+.testimonial .swiper-slide {
+  margin-left: 80px; /* Tạo khoảng cách nhẹ giữa các khung */
+}
+.testimonial .swiper-slide {
+  margin-left: 20px; /* Dịch chuyển từng khung testimonial sang phải */
+}
