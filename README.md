@@ -6,8 +6,7 @@ Dự án website giới thiệu sản phẩm với giao diện hiện đại, hi
 
 🖼️ Hình Ảnh Demo
 Trang chủ:
-
-Giao diện slider sản phẩm:
+![image](https://github.com/user-attachments/assets/19b47800-ed1a-4329-8036-b3797c8e523d)
 
 🖥️ Công Nghệ Sử Dụng
 HTML5 & CSS3
